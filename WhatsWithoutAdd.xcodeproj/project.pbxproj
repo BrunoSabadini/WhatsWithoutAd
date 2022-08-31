@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157C2FE128B6A300003FC1C4 /* CustomTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 157C2FE028B6A300003FC1C4 /* CustomTextField */; };
+		157C2FE328BD0A08003FC1C4 /* ExtensionAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157C2FE228BD0A08003FC1C4 /* ExtensionAdd.swift */; };
 		15D2645E286CA50100612F47 /* WhatsWithoutAddApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2645D286CA50100612F47 /* WhatsWithoutAddApp.swift */; };
-		15D26460286CA50100612F47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2645F286CA50100612F47 /* ContentView.swift */; };
+		15D26460286CA50100612F47 /* InformNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2645F286CA50100612F47 /* InformNumberView.swift */; };
 		15D26462286CA50500612F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D26461286CA50500612F47 /* Assets.xcassets */; };
 		15D26465286CA50500612F47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D26464286CA50500612F47 /* Preview Assets.xcassets */; };
 		15D2646F286CA50500612F47 /* WhatsWithoutAddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2646E286CA50500612F47 /* WhatsWithoutAddTests.swift */; };
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		157C2FE228BD0A08003FC1C4 /* ExtensionAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAdd.swift; sourceTree = "<group>"; };
 		15D2645A286CA50100612F47 /* WhatsWithoutAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsWithoutAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D2645D286CA50100612F47 /* WhatsWithoutAddApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsWithoutAddApp.swift; sourceTree = "<group>"; };
-		15D2645F286CA50100612F47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15D2645F286CA50100612F47 /* InformNumberView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = InformNumberView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		15D26461286CA50500612F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15D26464286CA50500612F47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15D2646A286CA50500612F47 /* WhatsWithoutAddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsWithoutAddTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157C2FE128B6A300003FC1C4 /* CustomTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				15D2645D286CA50100612F47 /* WhatsWithoutAddApp.swift */,
-				15D2645F286CA50100612F47 /* ContentView.swift */,
+				15D2645F286CA50100612F47 /* InformNumberView.swift */,
+				157C2FE228BD0A08003FC1C4 /* ExtensionAdd.swift */,
 				15D26461286CA50500612F47 /* Assets.xcassets */,
 				15D26463286CA50500612F47 /* Preview Content */,
 			);
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = WhatsWithoutAdd;
+			packageProductDependencies = (
+				157C2FE028B6A300003FC1C4 /* CustomTextField */,
+			);
 			productName = WhatsWithoutAdd;
 			productReference = 15D2645A286CA50100612F47 /* WhatsWithoutAdd.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 15D26451286CA50100612F47;
+			packageReferences = (
+				157C2FDF28B6A300003FC1C4 /* XCRemoteSwiftPackageReference "CustomTextField" */,
+			);
 			productRefGroup = 15D2645B286CA50100612F47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D26460286CA50100612F47 /* ContentView.swift in Sources */,
+				157C2FE328BD0A08003FC1C4 /* ExtensionAdd.swift in Sources */,
+				15D26460286CA50100612F47 /* InformNumberView.swift in Sources */,
 				15D2645E286CA50100612F47 /* WhatsWithoutAddApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		157C2FDF28B6A300003FC1C4 /* XCRemoteSwiftPackageReference "CustomTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MAAlsaleh0/CustomTextField.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		157C2FE028B6A300003FC1C4 /* CustomTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157C2FDF28B6A300003FC1C4 /* XCRemoteSwiftPackageReference "CustomTextField" */;
+			productName = CustomTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15D26452286CA50100612F47 /* Project object */;
 }
